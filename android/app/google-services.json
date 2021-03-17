@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "125373992079",
+    "project_id": "dsc-bzu",
+    "storage_bucket": "dsc-bzu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125373992079:android:8e8e47ce579fbf2a05b4fa",
+        "android_client_info": {
+          "package_name": "com.example.dsc_bzu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125373992079-6pk7io6hl5ktqt9gu46bkagsp67jk6fd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS_6ptZBXNI4tHcWJ8TmfXi4BfnZb981U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125373992079-6pk7io6hl5ktqt9gu46bkagsp67jk6fd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

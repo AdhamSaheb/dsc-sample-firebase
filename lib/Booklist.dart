@@ -4,7 +4,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 
 class BookList extends StatelessWidget {
   TextEditingController titleController = new TextEditingController();
-  TextEditingController authorController = new TextEditingController();
+  TextEditingController descriptionController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -54,10 +54,10 @@ class BookList extends StatelessWidget {
                                         ),
                                         Padding(
                                           padding: EdgeInsets.only(top: 20),
-                                          child: Text("Author: "),
+                                          child: Text("Description: "),
                                         ),
                                         TextField(
-                                          controller: authorController,
+                                          controller: descriptionController,
                                           decoration: InputDecoration(
                                             hintText: document['description'],
                                           ),
@@ -88,8 +88,8 @@ class BookList extends StatelessWidget {
                                               new Map<String, dynamic>();
                                           updateBook["title"] =
                                               titleController.text;
-                                          updateBook["author"] =
-                                              authorController.text;
+                                          updateBook["description"] =
+                                              descriptionController.text;
 
                                           // Updae Firestore record information regular way
                                           FirebaseFirestore.instance
@@ -116,7 +116,7 @@ class BookList extends StatelessWidget {
                                 fontWeight: FontWeight.bold),
                           ),
                           subtitle: new Text(
-                            "Description " + document['description'],
+                            "Description : " + document['description'],
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w300),
